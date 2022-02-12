@@ -26,6 +26,7 @@ class Button {
             id = this.name;
             cls = 'opBtn'
         }
+        // i don't actually know when to use if/else vs switch/case so I'll just keep you guessing
         switch (this.name) {
             case 'add':
                 display = '+'
