@@ -50,13 +50,16 @@ button:active {
     margin: 2vmin;
     grid-area: display;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: right;
+    flex-direction: column;
+    justify-content: center;
     font-size: 5vmin;
     overflow: hidden;
     padding: 0 0.5em 0 0.5em;
     border-radius: 3vmin;
+}
+
+#answer {
+    color: #f8f0fb;
 }
 
 #numbers {

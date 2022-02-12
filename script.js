@@ -1,3 +1,3 @@
-let displayHere = document.getElementById('display');
+let displayHere = document.getElementById('expression');
 let calc = new Calculator(displayHere);
 calc.buildCalc();
