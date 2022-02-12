@@ -57,7 +57,7 @@ button:active {
     flex-direction: column;
     justify-content: center;
     font-size: 8vmin;
-    overflow: hidden;
+    overflow-x: auto;
     border-radius: 3vmin;
 }
 
