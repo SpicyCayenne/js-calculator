@@ -39,6 +39,9 @@ class Calculator {
     }
 
     numPress(button) {
+        if (document.getElementById('answer').innerText !== '0'){
+            this.resetAnswer();
+        }
         if (this.expression === 0) {
             this.expression = ''
         }
@@ -81,12 +84,20 @@ class Calculator {
         document.getElementById('answer').style.color = 'black';
     }
     resetAnswer() {
-        document.getElementById('answer').innerText = '0';
+        document.getElementById('answer').innerText = 0;
         document.getElementById('answer').style.color = '#f8f0fb';
+        this.expression = 0;
+        this.updateDisplay();
     }
 
     evaluate(expression) {
-        this.showAnswer(eval(expression))
+        if (expression === "43110" || expression === "43770") {
+            return this.showAnswer('howdy, stranger');
+        }
+        if (expression === '80085') {
+            return this.showAnswer('ha, boobs');
+        }
+        return this.showAnswer(eval(expression))
     }
 }
 
