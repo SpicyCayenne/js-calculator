@@ -143,7 +143,7 @@ button:active {
 
 #extraBtns {
     display: grid;
-    grid-template-areas: "b0 clear eq eq";
+    grid-template-areas: "b0 dec clear eq";
     grid-area: extra;
 }
 
@@ -153,6 +153,10 @@ button:active {
 
 #eq {
     grid-area: eq;
+}
+
+#btnDec {
+    grid-area: dec;
 }
 
 @media (max-width: 425px) {

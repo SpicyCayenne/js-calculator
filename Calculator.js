@@ -11,7 +11,7 @@ class Calculator {
             new Button(i);
         }
         // the other buttons
-        let operators = ['C', 'eq', 'add', 'sub', 'mult', 'divide']
+        let operators = ['C','.', 'eq', 'add', 'sub', 'mult', 'divide']
         for (let i = 0; i < operators.length; i++) {
             new Button(operators[i]);
         }

@@ -9,13 +9,17 @@ class Button {
         let id;
         let cls;
         let display = this.name;
-        if (typeof (this.name) === 'number') {
-            if (this.name === 0) {
+        if (typeof (this.name) === 'number' || this.name === '.') {
+            if (this.name === 0 || this.name === '.') {
                 location = 'extraBtns'
             } else {
                 location = 'numbers'
             }
-            id = `btn${this.name}`;
+            if (this.name === '.') {
+                id = `btnDec`
+            } else {
+                id = `btn${this.name}`
+            };
             cls = 'numBtn'
         } else if (this.name === 'C' || this.name === 'eq') {
             location = 'extraBtns'
